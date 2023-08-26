@@ -1,0 +1,66 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: ProductSansBold;
+    src: url("./fonts/Product\ Sans\ Bold.ttf");
+
+    font-family: ProductSansBoldItalic;
+    src: url("./fonts/Product\ Sans\ Bold\ Italic.ttf.ttf");
+
+    font-family: ProductSansItalic;
+    src: url("./fonts/Product\ Sans\ Italic.ttf");
+
+    font-family: ProductSansRegular;
+    src: url("./fonts/Product\ Sans\ Regular.ttf");
+}
+/* 
+html,
+body {
+    height: 100%;
+    width: 100%;
+} */
+
+#main {
+    /* width: 100%;
+    min-height: 100vh; */
+    position: relative;
+    background-color: #333;
+    overflow: hidden;
+}
+
+
+.part1,
+.part2,
+.part3 {
+    width: 100%;
+    height: 100vh;
+}
+
+
+.part2 .stripe {
+    width: 300%;
+    transition: all cubic-bezier(0.19, 1, 0.22, 1) 0.8s;
+}
+
+.part2 h1 {
+    font-size: 12vw;
+    line-height: 11.8vw;
+    font-family: ProductSansBold;
+    color: #fff;
+    overflow: hidden;
+}
+
+.part2 h1 span {
+    color: transparent;
+    -webkit-text-stroke: 0.6px;
+    -webkit-text-stroke-color: #fff;
+}
+
+.stripe:nth-child(2n) {
+    margin-left: -100%;
+}
+
